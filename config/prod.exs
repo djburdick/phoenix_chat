@@ -31,10 +31,11 @@ config :phoenix_chat, PhoenixChat.Repo,
 # To get SSL working, you will need to add the `https` key
 # to the previous section and set your `:url` port to 443:
 #
-#     config :phoenix_chat, PhoenixChat.Endpoint,
-#       ...
-      url: [scheme: "https", host: "young-sands-54503.herokuapp.com", port: 443],
-      force_ssl: [rewrite_on: [:x_forwarded_proto]],
+
+config :phoenix_chat, PhoenixChat.Endpoint,
+url: [scheme: "https", host: "young-sands-54503.herokuapp.com", port: 443],
+force_ssl: [rewrite_on: [:x_forwarded_proto]],
+
 #       https: [port: 443,
 #               keyfile: System.get_env("SOME_APP_SSL_KEY_PATH"),
 #               certfile: System.get_env("SOME_APP_SSL_CERT_PATH")]
